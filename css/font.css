@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "SCRIPTBL";
+  src: url("../fonts/SCRIPTBL.eot");
+  src: local("SCRIPTBL"), url("../fonts/SCRIPTBL.woff") format("woff"),
+    url("../fonts/SCRIPTBL.ttf") format("truetype");
+}
+
+.fontsforweb_fontid_12234 {
+  font-family: "SCRIPTBL" !important;
+}
