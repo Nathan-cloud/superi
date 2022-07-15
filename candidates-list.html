@@ -139,192 +139,99 @@
       <!--End Main Header -->
 
       <!--Page Title-->
-      <section class="page-title">
+      <!--Page Title-->
+      <section class="page-title style-two">
         <div class="auto-container">
-          <div class="title-outer">
-            <h1>Showing All Resumes</h1>
-            <ul class="page-breadcrumb">
-              <li><a href="index.html">Home</a></li>
-              <li>Resumes</li>
-            </ul>
+          <div class="title-outer mt-5">
+            <h1>Find Jobs</h1>
           </div>
+
+          <!-- Job Search Form -->
+          <div class="job-search-form">
+            <form method="post" action="#">
+              <div class="row">
+                <!-- Form Group -->
+                <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                  <span class="icon flaticon-search-1"></span>
+                  <input
+                    type="text"
+                    name="field_name"
+                    placeholder="Job title, keywords, or company"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Job Search Form -->
         </div>
       </section>
       <!--End Page Title-->
+      <!--End Page Title-->
 
       <!-- Listing Section -->
+
       <section class="ls-section">
         <div class="auto-container">
           <div class="filters-backdrop"></div>
 
           <div class="row">
-            <!-- Filters Column -->
-            <div class="filters-column col-lg-4 col-md-12 col-sm-12">
-              <div class="inner-column pd-right">
-                <div class="filters-outer">
-                  <button type="button" class="theme-btn close-filters">
-                    X
-                  </button>
+            <!-- Content Column -->
+            <div class="content-column col-lg-12">
+              <div class="ls-outer">
+                <!-- ls Switcher -->
+                <div class="ls-switcher">
+                  <div class="showing-result">
+                    <div class="top-filters">
+                      <div class="form-group">
+                        <select class="chosen-select">
+                          <option>Candidate Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>other</option>
+                        </select>
+                      </div>
 
-                  <!-- Filter Block -->
-                  <div class="filter-block">
-                    <h4>Search by Keywords</h4>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="listing-search"
-                        placeholder="Job title, keywords, or company"
-                      />
-                      <span class="icon flaticon-search-3"></span>
-                    </div>
-                  </div>
+                      <div class="form-group">
+                        <select class="chosen-select">
+                          <option>Date Posted</option>
+                          <option>New Jobs</option>
+                          <option>Freelance</option>
+                          <option>Full Time</option>
+                          <option>Internship</option>
+                          <option>Part Time</option>
+                          <option>Temporary</option>
+                        </select>
+                      </div>
 
-                  <!-- Filter Block -->
-                  <div class="filter-block">
-                    <h4 class="text-center">Experience</h4>
-                    <div class="range-slider-one">
-                      <div class="area-range-slider"></div>
-                      <div class="input-outer">
-                        <div class="amount-outer">
-                          <span class="area-amount"></span>Yrs
-                        </div>
+                      <div class="form-group">
+                        <select class="chosen-select">
+                          <option>Experience Level</option>
+                          <option>New Jobs</option>
+                          <option>Freelance</option>
+                          <option>Full Time</option>
+                          <option>Internship</option>
+                          <option>Part Time</option>
+                          <option>Temporary</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <select class="chosen-select">
+                          <option>Education Level</option>
+                          <option>New Jobs</option>
+                          <option>Freelance</option>
+                          <option>Full Time</option>
+                          <option>Internship</option>
+                          <option>Part Time</option>
+                          <option>Temporary</option>
+                        </select>
                       </div>
                     </div>
                   </div>
 
-                  <!-- Filter Block -->
-                  <div class="filter-block">
-                    <h4>Category</h4>
-                    <div class="form-group">
-                      <select class="chosen-select">
-                        <option>Choose a category</option>
-                        <option>Back-end</option>
-                        <option>Front-End</option>
-                        <option>Ui-Ux Designer</option>
-                        <option>Content Developer</option>
-                      </select>
-                      <span class="icon flaticon-briefcase"></span>
-                    </div>
-                  </div>
-
-                  <!-- Switchbox Outer -->
-                  <div class="switchbox-outer">
-                    <h4 class="text-center">Opportunity Type</h4>
-                    <ul class="switchbox">
-                      <li>
-                        <label class="switch">
-                          <input type="checkbox" checked />
-                          <span class="slider round"></span>
-                          <span class="title">Job</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="switch">
-                          <input type="checkbox" />
-                          <span class="slider round"></span>
-                          <span class="title">Vacancies</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="switch">
-                          <input type="checkbox" />
-                          <span class="slider round"></span>
-                          <span class="title">Internship</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="switch">
-                          <input type="checkbox" />
-                          <span class="slider round"></span>
-                          <span class="title">training</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="switch">
-                          <input type="checkbox" />
-                          <span class="slider round"></span>
-                          <span class="title">Bootcamp</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="switch">
-                          <input type="checkbox" />
-                          <span class="slider round"></span>
-                          <span class="title">Career Guidance</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <!-- Filter Block -->
-                  <div class="filter-block">
-                    <h4>Candidate Gender</h4>
-                    <div class="form-group">
-                      <select class="chosen-select">
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Others</option>
-                      </select>
-                      <span class="icon flaticon-man"></span>
-                    </div>
-                  </div>
-
-                  <!-- Checkboxes Ouer -->
-                  <div class="checkbox-outer">
-                    <h4>Education Levels</h4>
-                    <ul class="checkboxes square">
-                      <li>
-                        <input id="check-a" type="checkbox" name="check" />
-                        <label for="check-a">Certificate</label>
-                      </li>
-                      <li>
-                        <input id="check-b" type="checkbox" name="check" />
-                        <label for="check-b">Diploma</label>
-                      </li>
-                      <li>
-                        <input id="check-c" type="checkbox" name="check" />
-                        <label for="check-c">Associate Degree</label>
-                      </li>
-                      <li>
-                        <input id="check-d" type="checkbox" name="check" />
-                        <label for="check-d">Bachelor Degree</label>
-                      </li>
-                      <li>
-                        <input id="check-e" type="checkbox" name="check" />
-                        <label for="check-e">Master’s Degree</label>
-                      </li>
-                      <li class="mb-5">
-                        <button class="view-more">
-                          <span class="icon flaticon-plus"></span> View More
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Content Column -->
-            <div class="content-column col-lg-8 col-md-12 col-sm-12">
-              <div class="ls-outer">
-                <button
-                  type="button"
-                  class="theme-btn btn-style-two toggle-filters"
-                >
-                  Show Filters
-                </button>
-
-                <!-- ls Switcher -->
-                <div class="ls-switcher">
-                  <div class="showing-result">
-                    <div class="text">
-                      Showing <strong>41-60</strong> of
-                      <strong>944</strong> jobs
-                    </div>
-                  </div>
                   <div class="sort-by">
                     <select class="chosen-select">
-                      <option>New Jobs</option>
+                      <option>Most Recent</option>
                       <option>Freelance</option>
                       <option>Full Time</option>
                       <option>Internship</option>
@@ -343,16 +250,16 @@
                   </div>
                 </div>
 
-                <!-- Candidate block three -->
-                <div class="candidate-block-three">
-                  <div class="inner-box">
-                    <div class="content">
-                      <figure class="image">
-                        <img src="images/resource/candidate-1.webp" alt="" />
-                      </figure>
-                      <h4 class="name"><a href="#">Darlene Robertson</a></h4>
-                      <ul class="candidate-info">
-                        <li class="designation">UI Designer</li>
+                <div class="row">
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/resource/candidate-1.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Floyd Miles</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
                         <li>
                           <span class="icon flaticon-map-locator"></span>
                           London, UK
@@ -361,35 +268,22 @@
                           <span class="icon flaticon-money"></span> $99 / hour
                         </li>
                       </ul>
-                      <ul class="post-tags">
-                        <li><a href="#">App</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Digital</a></li>
-                      </ul>
-                    </div>
-                    <div class="btn-box">
-                      <button class="bookmark-btn">
-                        <span class="flaticon-bookmark"></span>
-                      </button>
-                      <a
-                        href="candidates-single.html"
-                        class="theme-btn btn-style-three"
-                        ><span class="btn-title">View Profile</span></a
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
                       >
                     </div>
                   </div>
-                </div>
 
-                <!-- Candidate block three -->
-                <div class="candidate-block-three">
-                  <div class="inner-box">
-                    <div class="content">
-                      <figure class="image">
-                        <img src="images/resource/candidate-2.webp" alt="" />
-                      </figure>
-                      <h4 class="name"><a href="#">Wade Warren</a></h4>
-                      <ul class="candidate-info">
-                        <li class="designation">UI Designer</li>
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/resource/candidate-2.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Darrell Steward</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
                         <li>
                           <span class="icon flaticon-map-locator"></span>
                           London, UK
@@ -398,38 +292,130 @@
                           <span class="icon flaticon-money"></span> $99 / hour
                         </li>
                       </ul>
-                      <ul class="post-tags">
-                        <li><a href="#">App</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Digital</a></li>
-                      </ul>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
                     </div>
-                    <div class="btn-box">
-                      <button class="bookmark-btn">
-                        <span class="flaticon-bookmark"></span>
-                      </button>
-                      <a
-                        href="candidates-single.html"
-                        class="theme-btn btn-style-three"
-                        ><span class="btn-title">View Profile</span></a
+                  </div>
+
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/resource/candidate-1.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Brooklyn Simmons</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/resource/candidate-2.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Jane Cooper</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/resource/candidate-1.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Ralph Edwards</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/resource/candidate-2.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Ronald Richards</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
                       >
                     </div>
                   </div>
                 </div>
 
-                <!-- Listing Show More -->
-                <div class="ls-show-more">
-                  <p>Showing 36 of 497 Jobs</p>
-                  <div class="bar">
-                    <span class="bar-inner" style="width: 40%"></span>
-                  </div>
-                  <button class="show-more">Show More</button>
-                </div>
+                <!-- Pagination -->
+                <nav class="ls-pagination">
+                  <ul>
+                    <li class="prev">
+                      <a href="#"><i class="fa fa-arrow-left"></i></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#" class="current-page">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="next">
+                      <a href="#"><i class="fa fa-arrow-right"></i></a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!--End Listing Page Section -->
       <!-- Main Footer -->
       <footer
