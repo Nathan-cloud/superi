@@ -4,13 +4,13 @@
 .profile-list .button,
 .timeline-bar,
 .timeline-box .dot {
-  background-color: rgb(34 33 140);
+  background-color: #1967d2;
 }
 .timeline-box-inner,
 .price-box.box-primary .btn,
 .widget_search .search-form,
 .widget_tag_cloud a:hover {
-  border-color: rgb(34 33 140);
+  border-color: #1967d2;
 }
 
 /**
