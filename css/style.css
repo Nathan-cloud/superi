@@ -9103,163 +9103,7 @@ About Section
 .about-section .count-employers .image {
   margin-bottom: 0;
 }
-/*=======================================================================
-[02] employee details Style
-=========================================================================*/
-.profile-social,
-.profile-preword span,
-.progress-bar .bar-fill,
-.profile-list .button,
-.timeline-bar,
-.timeline-box .dot {
-  background-color: #1967d2;
-}
-.timeline-box-inner,
-.price-box.box-primary .btn,
-.widget_search .search-form,
-.widget_tag_cloud a:hover {
-  border-color: #1967d2;
-}
 
-/**
-  * 6.3 - Social
-  */
-.social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  position: relative;
-  top: -10px;
-  left: 80px;
-}
-.social li {
-  display: inline-block;
-  margin: 5px 15px;
-}
-.social li a {
-  width: 45px;
-  height: 45px;
-  position: relative;
-  display: inline-block;
-  background-color: transparent;
-  -webkit-transition: -webkit-transition, background-color 0.25s linear 0s;
-  -moz-transition: -moz-transition, background-color 0.25s linear 0s;
-  transition: transition, background-color 0.25s linear 0s;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-.social li a:hover {
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.social li a,
-.social li a .fab {
-  line-height: 45;
-}
-.social li a .fab {
-  color: #fff;
-  font-size: 20px;
-  line-height: 45px;
-  display: block;
-}
-
-@media (max-width: 767px) {
-  .social li {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .social li a {
-    width: 35px;
-    height: 35px;
-  }
-  .social li a,
-  .social li a .fab {
-    line-height: 35px;
-  }
-  .social li a .fab {
-    font-size: 17px;
-  }
-}
-
-.wrapper {
-  opacity: 1;
-  visibility: visible;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: opacity 400ms ease-out;
-  -moz-transition: opacity 400ms ease-out;
-  transition: opacity 400ms ease-out;
-}
-
-.mobile.lock-scroll,
-.mobile.lock-scroll body,
-.mobile.lock-scroll .wrapper {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.content {
-  z-index: 2;
-  position: relative;
-}
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
-}
-
-.section {
-  padding-top: 70px;
-}
-
-.section-box {
-  padding: 40px 50px;
-}
-
-.section-title {
-  color: #3d4451;
-  font-size: 34px;
-  line-height: 1.2;
-  font-weight: 600;
-  text-align: center;
-  position: relative;
-  top: -30px;
-}
-
-.section-box,
-.timeline-box-inner {
-  background-color: #f1f7fa;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-  border-radius: 4px;
-}
-
-@media (max-width: 992px) {
-  .section-box {
-    padding: 50px 40px;
-  }
-}
-@media (max-width: 767px) {
-  .section {
-    padding-top: 50px;
-  }
-
-  .section-box {
-    padding: 30px 20px;
-  }
-
-  .section-title {
-    font-size: 30px;
-  }
-}
 /**
   * 8.0 - Preload/Overlay
   */
@@ -9424,13 +9268,13 @@ About Section
 .profile-photo img {
   width: 100%;
   display: block;
+  height: 320px;
 }
 
 .profile-preword {
   margin-bottom: 28px;
 }
 .profile-preword span {
-  color: #fff;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
@@ -9451,7 +9295,17 @@ About Section
   border-width: 0 0 8px 8px;
   border-color: transparent;
 }
-
+.profile-preword span {
+  background: #fff;
+  border: 2px solid #3d4451;
+  border-radius: 1px;
+  color: #3d4451;
+}
+.profile-preword span:hover {
+  background: #1967d2;
+  color: #fff;
+  border: 2px solid #1967d2;
+}
 .profile-list {
   margin: 0;
   padding: 0;
@@ -9504,7 +9358,7 @@ About Section
 }
 
 .profile-social {
-  padding: 15px 0;
+  padding: 1px 0;
 }
 
 @media (max-width: 992px) {
@@ -9735,7 +9589,7 @@ About Section
 .inner-page-banner {
   display: block;
   padding: 9.2rem 0;
-  background: #f1f7fa;
+  background: #e2eaf8;
 }
 .inner-page-banner .breadcrumbs-area {
   position: relative;
@@ -11001,7 +10855,7 @@ Candidate Detail Section
 }
 
 .candidate-detail-section.style-three .upper-box {
-  padding: 70px 0 30px;
+  padding: 70px 0 0px;
 }
 
 .candidate-detail-outer {
@@ -11198,6 +11052,10 @@ Candidate Detail Section
 .candidate-block-six .inner-box {
   position: relative;
   text-align: center;
+  position: relative;
+  text-align: center;
+  padding: 40px 0px;
+  margin-top: 40px;
 }
 
 .candidate-block-six .image {
@@ -16196,6 +16054,42 @@ Subscribe Section Two
   max-width: 490px;
   width: 100%;
   margin: 0 auto;
+}
+/***
+
+==================================================================
+Terms and condition Section
+==================================================================
+
+***/
+
+.tnc-section {
+  position: relative;
+  padding: 190px 0 50px;
+}
+
+.tnc-section .auto-container {
+  max-width: 880px;
+}
+
+.tnc-section .text-box {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.tnc-section h3 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 35px;
+  color: #202124;
+  margin-bottom: 23px;
+}
+
+.tnc-section p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #696969;
+  margin-bottom: 24px;
 }
 
 /***
