@@ -871,17 +871,67 @@ Message Box
 /*==========================
 Default Tabs
 ===========================*/
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*/
+.nav-pills-custom .nav-link {
+  color: #aaa;
+  background: #fff;
+  position: relative;
+}
+.nav-pills-custom .nav-link {
+  width: 530px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+}
+.nav-pills-custom .nav-link.active {
+  color: #45b649;
+  background: #fff;
+  width: 530px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+}
+@media (min-width: 768px) {
+  .tab-pane,
+  .tab-content > .active {
+    position: relative;
+    left: 50px;
+  }
+}
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+    content: "";
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
 
 .default-tabs {
   position: relative;
-  overflow: hidden;
 }
 
 .default-tabs .tab-buttons {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -921,8 +971,10 @@ Default Tabs
 
 .default-tabs .tabs-content {
   position: relative;
-  width: 100%;
+  width: 120%;
   padding: 25px 0;
+  left: 50%;
+  top: -150px;
 }
 
 .default-tabs .tabs-content p {
@@ -937,7 +989,6 @@ Default Tabs
 
 .default-tabs.style-two .tab-buttons {
   background: #ffffff;
-  border-bottom: 1px solid #e7e7ec;
 }
 
 .default-tabs.style-two .tab-buttons li {
@@ -954,7 +1005,6 @@ Default Tabs
 
 .default-tabs.style-two .tab-buttons li.active-btn {
   color: #1967d2;
-  border-bottom: 3px solid #5c6770;
 }
 
 /*==========================
@@ -16065,7 +16115,7 @@ Terms and condition Section
 
 .tnc-section {
   position: relative;
-  padding: 190px 0 50px;
+  padding: 60px 0 50px;
 }
 
 .tnc-section .auto-container {

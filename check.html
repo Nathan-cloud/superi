@@ -1,339 +1,660 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  style="
-    box-sizing: border-box;
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-  "
->
-  <head style="box-sizing: border-box">
-    <meta charset="UTF-8" style="box-sizing: border-box" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-      style="box-sizing: border-box"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      style="box-sizing: border-box"
-    />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SOLVIT - AFRICA</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
     <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon" />
     <link rel="icon" href="images/favicon.webp" type="image/x-icon" />
-    <title style="box-sizing: border-box">Certificate - SOLVIT AFRICA</title>
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <style>
+      .tabs-content {
+        display: none;
+      }
+      .tabs-content.active {
+        display: block;
+      }
+    </style>
   </head>
-  <body
-    style="
-      box-sizing: border-box;
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #212529;
-      text-align: left;
-      background-color: #fff;
-    "
-  >
-    <div
-      class="container font-arial p-5"
-      style="
-        box-sizing: border-box;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1140px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 3rem !important;
-      "
-    >
-      <div
-        class="outer-border"
-        style="
-          width: 980px;
-          height: 850px;
-          padding: 50px;
-          text-align: center;
-          background-image: url('./images/bg-cer.webp');
-          background-repeat: no-repeat;
-          background-size: 100%;
-          margin: auto;
-          box-sizing: border-box;
-        "
-      >
-        <div
-          class="inner-dotted-border"
-          style="
-            width: 640px;
-            height: 740px;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            left: 120px;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            class="img-certificate mt-n4 mb-4"
-            style="
-              box-sizing: border-box;
-              margin-bottom: 1.5rem !important;
-              margin-top: -1.5rem !important;
-            "
-          >
-            <img
-              src="images/logo-black.webp"
-              class="img-fluid"
-              width="200"
-              alt
-              style="
-                box-sizing: border-box;
-                vertical-align: middle;
-                border-style: none;
-                max-width: 100%;
-                height: auto;
-              "
-            />
+
+  <body data-anm=".anm">
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"></div>
+
+      <!-- Main Header-->
+      <header class="main-header header-style-two alternate">
+        <div class="auto-container">
+          <!-- Main box -->
+          <div class="main-box">
+            <!--Nav Outer -->
+            <div class="nav-outer">
+              <div class="logo-box">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="images/logo.webp" alt="" width="150" title=""
+                  /></a>
+                </div>
+              </div>
+
+              <nav class="nav main-menu">
+                <ul class="navigation" id="navbar">
+                  <li class="current">
+                    <a href="index.html"> <span>Home</span></a>
+                  </li>
+                  <li class="">
+                    <a href="about.html"> <span>About</span></a>
+                  </li>
+
+                  <li class="">
+                    <a href="job-list.html"> <span>Find Jobs</span></a>
+                  </li>
+
+                  <li class="">
+                    <a href="employers-list.html"> <span>Employers</span></a>
+                  </li>
+                  <li class="">
+                    <a href="candidates-list.html"> <span>Candidates</span></a>
+                  </li>
+                  <li class="">
+                    <a href="contact.html"> <span>Contact</span></a>
+                  </li>
+
+                  <!-- Only for Mobile View -->
+                  <li class="mm-add-listing">
+                    <a href="add-listing.html" class="theme-btn btn-style-one"
+                      >Register/Login</a
+                    >
+                    <span>
+                      <span class="contact-info">
+                        <span class="phone-num"
+                          ><span>Call us</span
+                          ><a href="tel:+250 788 981 033"
+                            >+250 788 981 033</a
+                          ></span
+                        >
+                        <span class="address"
+                          >KG 652 ST Kimihurura <br />
+                          Kigali Rwanda.</span
+                        >
+                        <a href="mailto:info@solvit.africa" class="email"
+                          >info@solvit.africa</a
+                        >
+                      </span>
+                      <span class="social-links">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                      </span>
+                    </span>
+                  </li>
+                </ul>
+              </nav>
+              <!-- Main Menu End-->
+            </div>
+
+            <div class="outer-box">
+              <!-- Login/Register -->
+              <div class="btn-box">
+                <a href="#" class="theme-btn btn-style-three call-modal"
+                  >Login / Register</a
+                >
+                <a href="#" class="theme-btn btn-style-one">Job Post</a>
+              </div>
+            </div>
           </div>
-          <h2
-            class="font-weight-normal"
-            style="
-              font-weight: 400 !important;
-              box-sizing: border-box;
-              margin-top: 0;
-              margin-bottom: 0.5rem;
-              line-height: 1.2;
-              font-size: 2rem;
-            "
-          >
-            Certificate of Participation
-          </h2>
+        </div>
 
-          <p
-            class="mb-5 font-weight-normal"
-            style="
-              box-sizing: border-box;
-              margin-top: 0;
-              margin-bottom: 3rem !important;
-              font-weight: 400 !important;
-            "
-          >
-            This Certificate is presented to
-          </p>
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo-black.webp" alt="" title=""
+            /></a>
+          </div>
 
-          <h1
-            class="certify font-weight-bold"
-            style="
-              font-size: 2.5rem;
-              color: #30456e;
-              position: relative;
-              border: 0;
-              outline: 0;
-              font-family: 'Brush Script MT';
-              box-sizing: border-box;
-              margin-top: 0;
-              margin-bottom: 0.5rem;
-              font-weight: 700 !important;
-              line-height: 1.2;
-            "
-          >
-            Clement Rugwiro
-          </h1>
+          <!--Nav Box-->
+          <div class="nav-outer clearfix">
+            <div class="outer-box">
+              <!-- Login/Register -->
+              <div class="login-box">
+                <a href="#" class="call-modal"
+                  ><span class="icon-user"></span
+                ></a>
+              </div>
 
-          <p
-            class="mt-5 pl-6 pr-6 wk font-14 font-weight-normal"
-            style="
-              box-sizing: border-box;
-              margin-top: 3rem !important;
-              margin-bottom: 1rem;
-              padding-left: 5rem !important;
-              padding-right: 5rem !important;
-              font-size: 14px;
-              font-weight: 400 !important;
-            "
-          >
-            to certify that they have successfully gone through the SOLVIT
-            AFRICA Software Development Training program in 2022 and they are
-            ready to join the global market place as a developer.
-          </p>
- 
+              <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"
+                ><span class="flaticon-menu-1"></span
+              ></a>
+            </div>
+          </div>
+        </div>
 
-          <table background="/wp-content/uploads/wov.png">
-  
-            <tr>
-              <td colspan="2"> 
-                <img
-                  src="images/resource/signature.webp"
-                  width="200"
-                  alt
-                  style="
-              box-sizing: border-box;
-    vertical-align: middle;
-    border-style: none;
-    border-bottom: 3px solid #1c787d;
-    position: relative;
-    left: -77px;
-                  "
-                />
-              </td>
-         
-              <td >   <div
-                  class="right-code"
-                  style="
-                background-image: url(./images/resource/BAR.webp);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: 4px solid #30456e;
-    border-style: solid;
-    width: 110px;
-    height: 110px;
-    position: relative;
-    left: 140px;
-    top: 40px;
-                  "
-                ></div></td>
-            </tr>
-            <tr>
-              <td>
-                <p
-                  class="lead font-italic font-weight-bold"
-                  style="
-                 font-size: 1rem;
-    width: 70%;
-    position: relative;
-    left: -29px;
-    top: 16px;
-    box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-weight: 700 !important;
-    font-style: italic !important;
-                  "
-                >
-                  Joseph Semafara, CEO SOLVIT AFRICA
-                </p>
-               </td>
-              </td>
-      
+        <!-- Mobile Nav -->
+        <div id="nav-mobile"></div>
+      </header>
+      <!--End Main Header -->
+      <section class="candidate-detail-section style-three">
+        <!-- Upper Box -->
+        <div class="upper-box ">
+          <div class="auto-container">
+            <!-- Candidate block Six -->
+            <div class="candidate-block-six">
+              <div class="inner-box">
            
-            </tr>
-            <tr>
-             <td>
-                       <div
-                  class="row mt-4"
-                  style="
-            margin-left: 15px;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    left: 50px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-top: 1.5rem !important;
-                  "
-                >
-                  <div
-                    class="col-md-4"
-                    style="
-                 box-sizing: border-box;
-          position: relative;
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          -ms-flex: 0 0 33.333333%;
-          flex: 0 0 33.333333%;
-          max-width: 33.333333%;
-      
-                    "
+                <h4 class="name"><a href="#">Terms and Conditions</a></h4>
+                <div class="text">Home / Terms and Conditions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- TNC Section -->
+      <section class="tnc-section mt-n5">
+        <div class="m-5">
+          <div class="row">
+            <div class="col-md-5 p-5">
+              <div class="text-box">
+                <h3>
+                  Definitions For the purposes of these Terms and Conditions:
+                </h3>
+                <ul class="catagory-list">
+                  <li>
+                    <a href="#" data-target-tab="#tab0"
+                      >Affiliate means an entity that controls, is controlled by
+                      or is under common control with a party, where "control"
+                      means ownership of 50% or more of the shares, equity
+                      interest or other securities entitled to vote for election
+                      of directors or other managing authority.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab1"
+                      >Country refers to: Rwanda</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab2"
+                      >Company (referred to as either "the Company", "We", "Us"
+                      or "Our" in this Agreement) refers to SOLVIT AFRICA, KG
+                      652 st., Kimihurura, Kigali Rwanda.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab3"
+                      >Device means any device that can access the Service such
+                      as a computer, a cellphone or a digital tablet.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab4"
+                      >Service refers to the Website.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab6"
+                      >Terms and Conditions (also referred as "Terms") mean
+                      these Terms and Conditions that form the entire agreement
+                      between You and the Company regarding the use of the
+                      Service. This Terms and Conditions agreement has been
+                      created with the help of the TermsFeed Terms and
+                      Conditions Generator.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab7"
+                      >Third-party Social Media Service means any services or
+                      content (including data, information, products or
+                      services) provided by a third-party that may be displayed,
+                      included or made available by the Service.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab8"
+                      >Website refers to SOLVIT AFRICA, accessible from
+                      www.solvit.africa</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-target-tab="#tab9"
+                      >You means the individual accessing or using the Service,
+                      or the company, or other legal entity on behalf of which
+                      such individual is accessing or using the Service, as
+                      applicable.</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-7  p-5">
+              <div class="tabs-content active" id="tab0">
+                <h3>Termination</h3>
+                <p>
+                  We may terminate or suspend Your access immediately, without
+                  prior notice or liability, for any reason whatsoever,
+                  including without limitation if You breach these Terms and
+                  Conditions.
+                </p>
+                <p>
+                  Upon termination, Your right to use the Service will cease
+                  immediately.
+                </p>
+              </div>
+              <div class="tabs-content" id="tab1">
+                <h3>Limitation of Liability</h3>
+                <p>
+                  Not with standing any damages that You might incur, the entire
+                  liability of the Company and any of its suppliers under any
+                  provision of this Terms and Your exclusive remedy for all of
+                  the foregoing shall be limited to the amount actually paid by
+                  You through the Service or 100 USD if You haven't purchased
+                  anything through the Service.
+                </p>
+                <p>
+                  To the maximum extent permitted by applicable law, in no event
+                  shall the Company or its suppliers be liable for any special,
+                  incidental, indirect, or consequential damages whatsoever
+                  (including, but not limited to, damages for loss of profits,
+                  loss of data or other information, for business interruption,
+                </p>
+
+                <p>
+                  for personal injury, loss of privacy arising out of or in any
+                  way related to the use of or inability to use the Service,
+                  third-party software and/or third-party hardware used with the
+                  Service, or otherwise in connection with any provision of this
+                  Terms), even if the Company or any supplier has been advised
+                  of the possibility of such damages and even if the remedy
+                  fails of its essential purpose.
+                </p>
+                <p>
+                  Some states do not allow the exclusion of implied warranties
+                  or limitation of liability for incidental or consequential
+                  damages, which means that some of the above limitations may
+                  not apply. In these states, each party's liability will be
+                  limited to the greatest extent permitted by law.
+                </p>
+              </div>
+
+              <div class="tabs-content" id="tab2">
+                <h3>Acknowledgment</h3>
+                <p>
+                  These are the Terms and Conditions governing the use of this
+                  Service and the agreement that operates between You and the
+                  Company. These Terms and Conditions set out the rights and
+                  obligations of all users regarding the use of the Service.
+                </p>
+                <p>
+                  Your access to and use of the Service is conditioned on Your
+                  acceptance of and compliance with these Terms and Conditions.
+                  These Terms and Conditions apply to all visitors, users and
+                  others who access or use the Service.
+                </p>
+
+                <p>
+                  By accessing or using the Service You agree to be bound by
+                  these Terms and Conditions. If You disagree with any part of
+                  these Terms and Conditions then You may not access the
+                  Service.
+                </p>
+
+                <p>
+                  You represent that you are over the age of 18. The Company
+                  does not permit those under 18 to use the Service.
+                </p>
+
+                <p>
+                  Your access to and use of the Service is also conditioned on
+                  Your acceptance of and compliance with the Privacy Policy of
+                  the Company. Our Privacy Policy describes Our policies and
+                  procedures on the collection, use and disclosure of Your
+                  personal information when You use the Application or the
+                  Website and tells You about Your privacy rights and how the
+                  law protects You. Please read Our Privacy Policy carefully
+                  before using Our Service.
+                </p>
+              </div>
+
+              <div class="tabs-content" id="tab3">
+                <h3>Links to Other Websites</h3>
+                <p>
+                  Our Service may contain links to third-party web sites or
+                  services that are not owned or controlled by the Company.
+                </p>
+                <p>
+                  The Company has no control over, and assumes no responsibility
+                  for, the content, privacy policies, or practices of any third
+                  party web sites or services. You further acknowledge and agree
+                  that the Company shall not be responsible or liable, directly
+                  or indirectly, for any damage or loss caused or alleged to be
+                  caused by or in connection with the use of or reliance on any
+                  such content, goods or services available on or through any
+                  such web sites or services.
+                </p>
+
+                <p>
+                  We strongly advise You to read the terms and conditions and
+                  privacy policies of any third-party web sites or services that
+                  You visit.
+                </p>
+              </div>
+
+              <div class="tabs-content" id="tab4">
+                <h3>"AS IS" and "AS AVAILABLE" Disclaimer</h3>
+                <p>
+                  The Service is provided to You "AS IS" and "AS AVAILABLE" and
+                  with all faults and defects without warranty of any kind.
+                </p>
+                <p>
+                  To the maximum extent permitted under applicable law, the
+                  Company, on its own behalf and on behalf of its Affiliates and
+                  its and their respective licensors and service providers,
+                  expressly disclaims all warranties, whether express, implied,
+                  statutory or otherwise, with respect to the Service, including
+                  all implied warranties of merchantability, fitness for a
+                  particular purpose, title and non-infringement, and warranties
+                  that may arise out of course of dealing, course of
+                  performance, usage or trade practice.
+                </p>
+
+                <p>
+                  Without limitation to the foregoing, the Company provides no
+                  warranty or undertaking, and makes no representation of any
+                  kind that the Service will meet Your requirements, achieve any
+                  intended results, be compatible or work with any other
+                  software, applications, systems or services, operate without
+                  interruption, meet any performance or reliability standards or
+                  be error free or that any errors or defects can or will be
+                  corrected.
+                </p>
+                <h5 class="mb-1">
+                  Without limiting the foregoing, neither the Company nor any of
+                  the company's provider makes any representation or warranty of
+                  any kind, express or implied:
+                </h5>
+                <p>
+                  (i) as to the operation or availability of the Service, or the
+                  information, content, and materials or products included
+                  thereon;
+                </p>
+
+                <p>
+                  (ii) that the Service will be uninterrupted or error-free;
+                </p>
+
+                <p>
+                  (iii) as to the accuracy, reliability, or currency of any
+                  information or content provided through the Service; or
+                </p>
+                <p>
+                  (iv) that the Service, its servers, the content, or e-mails
+                  sent from or on behalf of the Company are free of viruses,
+                  scripts, trojan horses, worms, malware, timebombs or other
+                  harmful components.
+                </p>
+
+                <p>
+                  Some jurisdictions do not allow the exclusion of certain types
+                  of warranties or limitations on applicable statutory rights of
+                  a consumer, so some or all of the above exclusions and
+                  limitations may not apply to You. But in such a case the
+                  exclusions and limitations set forth in this section shall be
+                  applied to the greatest extent enforceable under applicable
+                  law.
+                </p>
+              </div>
+
+              <div class="tabs-content" id="tab4">
+                <h3>Governing Law</h3>
+                <p>
+                  The laws of the Country, excluding its conflicts of law rules,
+                  shall govern this Terms and Your use of the Service. Your use
+                  of the Application may also be subject to other local, state,
+                  national, or international laws.
+                </p>
+
+                <p></p>
+              </div>
+
+              <div class="tabs-content" id="tab5">
+                <h3>Disputes Resolution</h3>
+                <p>
+                  If You have any concern or dispute about the Service, You
+                  agree to first try to resolve the dispute informally by
+                  contacting the Company.
+                </p>
+                <p></p>
+              </div>
+
+              <div class="tabs-content" id="tab6">
+                <h3>For European Union (EU) Users</h3>
+                <p>
+                  If You are a European Union consumer, you will benefit from
+                  any mandatory provisions of the law of the country in which
+                  you are resident in.
+                </p>
+                <p></p>
+              </div>
+
+              <div class="tabs-content" id="tab7">
+                <h3>United States Legal Compliance</h3>
+                <p>
+                  You represent and warrant that (i) You are not located in a
+                  country that is subject to the United States government
+                  embargo, or that has been designated by the United States
+                  government as a "terrorist supporting" country, and (ii) You
+                  are not listed on any United States government list of
+                  prohibited or restricted parties.
+                </p>
+                <p></p>
+              </div>
+
+              <div class="tabs-content" id="tab8">
+                <h3>Severability and Waiver</h3>
+                <p>
+                  Severability If any provision of these Terms is held to be
+                  unenforceable or invalid, such provision will be changed and
+                  interpreted to accomplish the objectives of such provision to
+                  the greatest extent possible under applicable law and the
+                  remaining provisions will continue in full force and effect.
+                </p>
+
+                <p>
+                  Waiver Except as provided herein, the failure to exercise a
+                  right or to require performance of an obligation under these
+                  Terms shall not effect a party's ability to exercise such
+                  right or require such performance at any time thereafter nor
+                  shall the waiver of a breach constitute a waiver of any
+                  subsequent breach.
+                </p>
+              </div>
+
+              <div class="tabs-content" id="tab9">
+                <h3>Translation Interpretation</h3>
+                <p>
+                  These Terms and Conditions may have been translated if We have
+                  made them available to You on our Service. You agree that the
+                  original English text shall prevail in the case of a dispute.
+                </p>
+              </div>
+
+              <div class="tabs-content" id="tab9">
+                <h3>Changes to These Terms and Conditions</h3>
+                <p>
+                  We reserve the right, at Our sole discretion, to modify or
+                  replace these Terms at any time. If a revision is material We
+                  will make reasonable efforts to provide at least 30 days'
+                  notice prior to any new terms taking effect. What constitutes
+                  a material change will be determined at Our sole discretion.
+                </p>
+                <p>
+                  By continuing to access or use Our Service after those
+                  revisions become effective, You agree to be bound by the
+                  revised terms. If You do not agree to the new terms, in whole
+                  or in part, please stop using the website and the Service.
+                </p>
+
+                <p>
+                  <b
+                    >If you have any questions about these Terms and Conditions,
+                    You can contact us.</b
                   >
-                    <img
-                      src="images/GIZ.webp"
-                      class="img-fluid"
-                      width="100"
-                      alt
-                      style="
-                      box-sizing: border-box;
-          vertical-align: middle;
-          border-style: none;
-          max-width: 100%;
-          height: auto;
-                      "
-                    />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End TNC Section -->
+
+      <!-- Main Footer -->
+      <footer
+        class="main-footer style-three"
+        style="background-image: url(images/background/3.webp)"
+      >
+        <div class="auto-container">
+          <!--Widgets Section-->
+          <div class="widgets-section">
+            <div class="row">
+              <div class="big-column col-xl-3 col-lg-3 col-md-12">
+                <div class="footer-column about-widget">
+                  <div class="logo">
+                    <a href="#"
+                      ><img src="images/logo.webp" width="150" alt=""
+                    /></a>
                   </div>
-                  <div
-                    class="col-md-4"
-                    style="
-              box-sizing: border-box;
-          position: relative;
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          -ms-flex: 0 0 33.333333%;
-          flex: 0 0 33.333333%;
-          max-width: 33.333333%;
-                    "
-                  >
-                    <img
-                      src="images/DSA.webp"
-                      class="img-fluid"
-                      width="100"
-                      alt
-                      style="
-                         box-sizing: border-box;
-          vertical-align: middle;
-          border-style: none;
-          max-width: 100%;
-          height: auto;
-          position: relative;
-          left: 90px;
-                      "
-                    />
+                  <p class="phone-num">
+                    <span>Call us </span><a href="#">+250 788 981 033</a>
+                  </p>
+                  <p class="address">
+                    KG 652 ST Kimihurura<br />
+                    Kigali Rwanda. <br /><a
+                      href="mailto:support@superio.com"
+                      class="email"
+                      >info@solvit.africa</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="big-column col-xl-9 col-lg-9 col-md-12">
+                <div class="row">
+                  <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h4 class="widget-title">For Candidates</h4>
+                      <div class="widget-content">
+                        <ul class="list">
+                          <li><a href="#">Browse Jobs</a></li>
+                          <li><a href="#">Browse Categories</a></li>
+                          <li><a href="#">Candidate Dashboard</a></li>
+                          <li><a href="#">Job Alerts</a></li>
+                          <li><a href="#">My Bookmarks</a></li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-      
-                  <div
-                    class="col-md-4"
-                    style="
-              box-sizing: border-box;
-          position: relative;
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          -ms-flex: 0 0 33.333333%;
-          flex: 0 0 33.333333%;
-          max-width: 33.333333%;
-                    "
-                  >
-                    <img
-                      src="images/ICT.webp"
-                      class="img-fluid mt-n2"
-                      width="60"
-                      alt
-                      style="
-                      box-sizing: border-box;
-          vertical-align: middle;
-          border-style: none;
-          max-width: 100%;
-          position: relative;
-          left: 180px;
-          height: auto;
-          margin-top: -0.5rem !important;
-                      "
-                    />
+
+                  <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h4 class="widget-title">For Employers</h4>
+                      <div class="widget-content">
+                        <ul class="list">
+                          <li><a href="#">Browse Candidates</a></li>
+                          <li><a href="#">Employer Dashboard</a></li>
+                          <li><a href="#">Add Job</a></li>
+                          <li><a href="terms.html">Terms and conditions</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h4 class="widget-title">About Us</h4>
+                      <div class="widget-content">
+                        <ul class="list">
+                          <li><a href="#">Job Page</a></li>
+                          <li><a href="#">Job Page Alternative</a></li>
+                          <li><a href="#">Resume Page</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-             </td>
-            </tr>
-          </table>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <!--Bottom-->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="outer-box">
+              <div class="copyright-text">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                <a href="#">SOLVIT AFRICA</a>. All Right Reserved.
+              </div>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-to-top scroll-to-target" data-target="html">
+          <span class="fa fa-angle-up"></span>
+        </div>
+      </footer>
+      <!-- End Main Footer -->
     </div>
+    <!-- End Page Wrapper -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/chosen.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/mmenu.polyfills.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/anm.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      const btns = document.querySelectorAll("[data-target-tab]");
+
+      btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btns.forEach((btn) => btn.classList.remove("active"));
+
+          const items = document.querySelectorAll(".tabs-content");
+
+          items.forEach((item) => item.classList.remove("active"));
+          btn.classList.add("active");
+          document.querySelector(btn.dataset.targetTab).classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>
