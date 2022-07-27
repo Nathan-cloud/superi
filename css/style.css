@@ -894,7 +894,7 @@ Default Tabs
 .tab-content {
   width: 100%;
   display: grid;
-  height: 16.5%;
+  height: 700px;
   overflow: auto;
 }
 .tab-content .tabs-content {
