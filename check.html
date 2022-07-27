@@ -18,14 +18,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <style>
-      .tabs-content {
-        display: none;
-      }
-      .tabs-content.active {
-        display: block;
-      }
-    </style>
+
   </head>
 
   <body data-anm=".anm">
@@ -172,7 +165,7 @@
                 </h3>
                 <ul class="catagory-list">
                   <li>
-                    <a href="#" data-target-tab="#tab0"
+                    <a href="#tab0" data-target-tab="#tab0"
                       >Affiliate means an entity that controls, is controlled by
                       or is under common control with a party, where "control"
                       means ownership of 50% or more of the shares, equity
@@ -181,30 +174,30 @@
                     >
                   </li>
                   <li>
-                    <a href="#" data-target-tab="#tab1"
+                    <a href="#tab1" data-target-tab="#tab1"
                       >Country refers to: Rwanda</a
                     >
                   </li>
                   <li>
-                    <a href="#" data-target-tab="#tab2"
+                    <a href="#tab2" data-target-tab="#tab2"
                       >Company (referred to as either "the Company", "We", "Us"
                       or "Our" in this Agreement) refers to SOLVIT AFRICA, KG
                       652 st., Kimihurura, Kigali Rwanda.</a
                     >
                   </li>
                   <li>
-                    <a href="#" data-target-tab="#tab3"
+                    <a href="#tab3" data-target-tab="#tab3"
                       >Device means any device that can access the Service such
                       as a computer, a cellphone or a digital tablet.</a
                     >
                   </li>
                   <li>
-                    <a href="#" data-target-tab="#tab4"
+                    <a href="#tab4" data-target-tab="#tab4"
                       >Service refers to the Website.</a
                     >
                   </li>
                   <li>
-                    <a href="#" data-target-tab="#tab6"
+                    <a href="#tab6" data-target-tab="#tab6"
                       >Terms and Conditions (also referred as "Terms") mean
                       these Terms and Conditions that form the entire agreement
                       between You and the Company regarding the use of the
@@ -214,7 +207,7 @@
                     >
                   </li>
                   <li>
-                    <a href="#" data-target-tab="#tab7"
+                    <a href="#tab7" data-target-tab="#tab7"
                       >Third-party Social Media Service means any services or
                       content (including data, information, products or
                       services) provided by a third-party that may be displayed,
@@ -222,7 +215,7 @@
                     >
                   </li>
                   <li>
-                    <a href="#" data-target-tab="#tab8"
+                    <a href="#tab8" data-target-tab="#tab8"
                       >Website refers to SOLVIT AFRICA, accessible from
                       www.solvit.africa</a
                     >
@@ -239,6 +232,7 @@
               </div>
             </div>
             <div class="col-md-7  p-5">
+              <div class="tab-content">
               <div class="tabs-content active" id="tab0">
                 <h3>Termination</h3>
                 <p>
@@ -514,6 +508,7 @@
                 </p>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </section>
@@ -641,7 +636,7 @@
     <script src="js/owl.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
-    <script>
+    <!-- <script>
       const btns = document.querySelectorAll("[data-target-tab]");
 
       btns.forEach((btn) => {
@@ -655,6 +650,6 @@
           document.querySelector(btn.dataset.targetTab).classList.add("active");
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
