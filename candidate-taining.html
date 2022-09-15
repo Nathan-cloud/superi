@@ -42,7 +42,7 @@
 
               <nav class="nav main-menu">
                 <ul class="navigation" id="navbar">
-                  <li class="">
+                  <li class="current">
                     <a href="index.html"> <span>Home</span></a>
                   </li>
                   <li class="">
@@ -56,6 +56,7 @@
                   <li class="">
                     <a href="employers-list.html"> <span>Employers</span></a>
                   </li>
+
                   <li class="dropdown">
                     <span>Talents</span>
                     <ul>
@@ -69,7 +70,8 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="current">
+
+                  <li class="">
                     <a href="contact.html"> <span>Contact</span></a>
                   </li>
 
@@ -148,162 +150,252 @@
         <div id="nav-mobile"></div>
       </header>
       <!--End Main Header -->
-      <!-- Map Section -->
-      <section class="map-section">
-        <div class="map-outer">
-          <div
-            class="map-canvas"
-            data-zoom="12"
-            data-lat="-37.817085"
-            data-lng="144.955631"
-            data-type="roadmap"
-            data-hue="#ffc400"
-            data-title="Envato"
-            data-icon-path="images/icons/contact-map-marker.png"
-            data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>"
-          ></div>
+      <!--End Main Header -->
+      <!--Page Title-->
+      <section class="page-title">
+        <div class="auto-container">
+          <div class="title-outer">
+            <h1>Candidate That Are in Training Now</h1>
+            <ul class="page-breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li>Resumes</li>
+            </ul>
+          </div>
         </div>
       </section>
-      <!-- End Map Section -->
-      <!-- Contact Section -->
-      <section class="contact-section">
+      <!--End Page Title-->
+
+      <!-- Listing Section -->
+      <section class="ls-section">
         <div class="auto-container">
-          <div class="upper-box">
-            <div class="row">
-              <div class="contact-block col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <span class="icon"
-                    ><img src="images/icons/placeholder.svg" alt=""
-                  /></span>
-                  <h4>Address</h4>
-                  <p>
-                    KG 652 ST Kimihurura
-                    <br />
-                    Kigali Rwanda.
-                  </p>
-                </div>
-              </div>
-              <div class="contact-block col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <span class="icon"
-                    ><img src="images/icons/smartphone.svg" alt=""
-                  /></span>
-                  <h4>Call Us</h4>
-                  <p><a href="#" class="phone">+250 788 981 033</a></p>
-                </div>
-              </div>
-              <div class="contact-block col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <span class="icon"
-                    ><img src="images/icons/letter.svg" alt=""
-                  /></span>
-                  <h4>Email</h4>
-                  <p><a href="#">info@solvx.tech</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="filters-backdrop"></div>
 
-          <!-- Contact Form -->
-          <div class="contact-form default-form">
-            <h3>Leave A Message</h3>
-            <!--Contact Form-->
-            <form method="post" action="#" id="email-form">
-              <div class="row">
-                <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                  <div class="response"></div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                  <label>Your Name</label>
-                  <input
-                    type="text"
-                    name="username"
-                    class="username"
-                    placeholder="Your Name*"
-                    required
-                  />
-                </div>
-
-                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                  <label>Your Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    class="email"
-                    placeholder="Your Email*"
-                    required
-                  />
-                </div>
-
-                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                  <label>Subject</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    class="subject"
-                    placeholder="Subject *"
-                    required
-                  />
-                </div>
-
-                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                  <label>Your Message</label>
-                  <textarea
-                    name="message"
-                    placeholder="Write your message..."
-                    required=""
-                  ></textarea>
-                </div>
-
-                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                  <button
-                    class="theme-btn btn-style-one p-1"
-                    type="button"
-                    id="submit"
-                    name="submit-form"
-                  >
-                    Send Massage
+          <div class="row">
+            <!-- Filters Column -->
+            <div class="filters-column col-lg-4 col-md-12 col-sm-12 mt-6">
+              <div class="inner-column">
+                <div class="filters-outer">
+                  <button type="button" class="theme-btn close-filters">
+                    X
                   </button>
+
+                  <!-- Filter Block -->
+                  <div class="filter-block">
+                    <h4>Search by Keywords</h4>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="listing-search"
+                        placeholder="By Resumes"
+                      />
+                      <span class="icon flaticon-search-3"></span>
+                    </div>
+                  </div>
+
+                  <!-- Filter Block -->
+                  <div class="filter-block">
+                    <h4>Category</h4>
+                    <div class="form-group">
+                      <select class="chosen-select">
+                        <option>Programming Langauge</option>
+                        <option>React js</option>
+                        <option>Python</option>
+                        <option>Front-End Developer</option>
+                        <option>UI/UX</option>
+                        <option>Laravel</option>
+                      </select>
+                      <span class="icon flaticon-briefcase"></span>
+                    </div>
+                  </div>
+
+                  <!-- Filter Block -->
+                  <div class="filter-block">
+                    <h4>Candidate Gender</h4>
+                    <div class="form-group">
+                      <select class="chosen-select">
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                      <span class="icon flaticon-heart-1"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </form>
-          </div>
-          <!--End Contact Form -->
-        </div>
-      </section>
-      <!-- Contact Section -->
+            </div>
 
-      <!-- Call To Action -->
-      <section class="call-to-action style-two">
-        <div class="auto-container">
-          <div class="outer-box">
-            <div class="content-column">
-              <div class="sec-title">
-                <h2>Recruiting?</h2>
-                <div class="text">
-                  Advertise your jobs to millions of monthly users and search
-                  15.8 million<br />
-                  CVs in our database.
-                </div>
-                <a href="#" class="theme-btn btn-style-one bg-blue"
-                  ><span class="btn-title">Start Recruiting Now</span></a
+            <!-- Content Column -->
+            <div class="content-column col-lg-8 col-md-12 col-sm-12">
+              <div class="ls-outer">
+                <button
+                  type="button"
+                  class="theme-btn btn-style-two toggle-filters"
                 >
-              </div>
-            </div>
+                  Show Filters
+                </button>
 
-            <div
-              class="image-column"
-              style="background-image: url(images/resource/image-1.webp)"
-            >
-              <figure class="image">
-                <img src="images/resource/image-1.webp" alt="" />
-              </figure>
+                <!-- ls Switcher -->
+                <div class="ls-switcher">
+                  <div class="showing-result">
+                    <div class="text">
+                      Showing <strong>41-60</strong> of
+                      <strong>944</strong> jobs
+                    </div>
+                  </div>
+                  <div class="sort-by">
+                    <select class="chosen-select">
+                      <option>New Jobs</option>
+                      <option>Freelance</option>
+                      <option>Full Time</option>
+                      <option>Internship</option>
+                      <option>Part Time</option>
+                      <option>Temporary</option>
+                    </select>
+
+                    <select class="chosen-select">
+                      <option>Show 10</option>
+                      <option>Show 20</option>
+                      <option>Show 30</option>
+                      <option>Show 40</option>
+                      <option>Show 50</option>
+                      <option>Show 60</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-6 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/profile.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Ralph Edwards</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+                      <ul class="post-tags">
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Digital</a></li>
+                      </ul>
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-6 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/profile.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Ronald Richards</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+                      <ul class="post-tags">
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Digital</a></li>
+                      </ul>
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-6 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/profile.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Robert Fox</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+                      <ul class="post-tags">
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Digital</a></li>
+                      </ul>
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Candidate block Four -->
+                  <div class="candidate-block-four col-lg-6 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                      <span class="thumb"
+                        ><img src="images/profile.webp" alt=""
+                      /></span>
+                      <h3 class="name"><a href="#">Esther Howard</a></h3>
+                      <span class="cat">UI Designer</span>
+                      <ul class="job-info">
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+                      <ul class="post-tags">
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Digital</a></li>
+                      </ul>
+                      <a href="#" class="theme-btn btn-style-three"
+                        >View Profile</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="ls-pagination">
+                  <ul>
+                    <li class="prev">
+                      <a href="#"><i class="fa fa-arrow-left"></i></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#" class="current-page">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="next">
+                      <a href="#"><i class="fa fa-arrow-right"></i></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Call To Action -->
+      <!--End Listing Page Section -->
 
       <!-- Main Footer -->
       <footer
@@ -416,9 +508,9 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/chosen.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.modal.min.js"></script>
     <script src="js/mmenu.polyfills.js"></script>
@@ -427,6 +519,5 @@
     <script src="js/owl.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
-    <!--Google Map APi Key-->
   </body>
 </html>

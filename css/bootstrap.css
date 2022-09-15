@@ -7559,6 +7559,9 @@ button.bg-dark:hover {
 .m-5 {
   margin: 3rem !important;
 }
+.mt-6 {
+  margin-top: 4.7rem !important;
+}
 .mt-5,
 .my-5 {
   margin-top: 3rem !important;
@@ -7779,6 +7782,9 @@ button.bg-dark:hover {
 }
 .m-n5 {
   margin: -3rem !important;
+}
+.mt-n8 {
+  margin-top: -6rem !important;
 }
 .mt-n5,
 .my-n5 {

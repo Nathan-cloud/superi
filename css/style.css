@@ -2512,7 +2512,11 @@ Main Header
 .main-header.fixed-header .logo {
   padding: 15px 0;
 }
-
+.logo-req {
+  position: relative;
+  left: 25%;
+  bottom: 80px;
+}
 .main-header .main-box {
   position: relative;
   display: -webkit-box;
@@ -3071,30 +3075,6 @@ Header Style Two
 .header-style-two .main-menu .navigation > li > span,
 .header-style-two .main-menu .navigation > li > a {
   color: #ffffff;
-}
-
-.header-style-two .upload-cv,
-.header-style-two .main-menu .navigation > li > ul > li > a:hover,
-.header-style-two .main-menu .navigation > li > ul > li > span:hover,
-.header-style-two .main-menu .navigation > li > ul > li > a:hover,
-.header-style-two .main-menu .navigation > li > ul > li > ul > li > a:hover,
-.header-style-two .main-menu .navigation > li > ul > li > ul > li > span:hover,
-.header-style-two
-  .main-menu
-  .navigation
-  > li
-  .mega-menu-bar
-  .column
-  > ul
-  > li
-  > a:hover,
-.header-style-two .main-menu .navigation > li.current.dropdown > span:after,
-.header-style-two .main-menu .navigation > li > ul > li > ul > li.current > a,
-.header-style-two .main-menu .navigation > li > ul > li.current > a,
-.header-style-two .main-menu .navigation > li.current.dropdown > span:after,
-.header-style-two .main-menu .navigation > li.current > a,
-.header-style-two .main-menu .navigation > li.current > span {
-  color: #fff;
 }
 
 .header-style-two .main-menu .navigation > li > ul > li > ul,
@@ -17128,7 +17108,6 @@ Dashboard
   padding-left: 365px;
   min-height: 100vh;
 }
-
 .dashboard .main-header {
   background: #ffffff;
 }
